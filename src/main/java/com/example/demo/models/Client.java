@@ -8,7 +8,7 @@ import lombok.Setter;
 @Getter
 @Setter
 public class Client {
-    @Id //lo que va atomar la interface
+    @Id //lo que va a tomar la interface
     @GeneratedValue(strategy = GenerationType.IDENTITY)
 
     private Long id;

@@ -57,5 +57,38 @@ public class Controller {
 
 
 
+/*
+package com.example.demo.controllers;
 
+import com.example.demo.models.Client;
+import com.example.demo.repository.Repository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RestController;
+
+import java.util.List;
+
+//PONEMOS DISTINTOS METODOS PARA LA CONTROLADORA
+@RestController
+public class Controller {
+
+    @Autowired
+    private Repository repo;
+    @GetMapping
+    public String index(){
+        return "conectado";
+    }
+    @GetMapping("Client")
+    public List<Client> getClient(){
+        return repo.findAll();
+    }
+    @PostMapping("alta")
+    public String postClient(@RequestBody Client cliente){
+        repo.save(cliente);
+        return "guardado";
+    }
+}
+*/
 
